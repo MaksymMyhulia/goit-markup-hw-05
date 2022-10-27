@@ -76,8 +76,9 @@ img {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-
-    transition: transform 250ms var(--timing-function) ;
+ 
+    transition: color 250ms var(--timing-function);
+    
     
 }
 .header-link:hover,
@@ -98,7 +99,7 @@ img {
     border-radius: 2px;
 
     transform: scaleX(0);
-    transition: opasity 250ms var(--timing-function); 
+   
 }
 .header-link.studio:hover::after {
     transform: scaleX(1);
@@ -118,7 +119,7 @@ img {
     border-radius: 2px;
 
     transform: scaleX(0);
-    transition: opasity 250ms var(--timing-function); 
+  
 }
 .header-link.portfolio:hover::after {
     transform: scaleX(1);
@@ -130,9 +131,13 @@ img {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--text-color);
+
+    transition: color 250ms var(--timing-function) ;
 }
 .header-nav-link {
     display: flex;
+    align-items: center;
+
 }
 
 .header-nav-link:hover,
@@ -143,7 +148,7 @@ img {
 .evenlope {
     fill: currentColor;
     margin-right: 10px;
-    margin-top: 2px;
+
 
 }
 
@@ -319,7 +324,7 @@ img {
     color: var(--original-white-color);
     background-color: var(--accent-color); 
 
-    transition: transform 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 }
 .btn:hover,
 .btn:focus {
@@ -457,7 +462,7 @@ img {
     justify-content: center;
     color: var(--link-color);
     
-    transition: transform 250ms var(--timing-function) ;
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
    
 }
 .main-list-soc-icon {
@@ -491,7 +496,7 @@ img {
     border-radius: 4px;
     color: var(--link-color);
 
-    transition: transform 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function) ;
 }
 .clients-item-icon {
     fill: currentColor;
@@ -530,7 +535,7 @@ img {
    color: var(--primary-text-color);
    background-color: var(--white-background-color);
 
-   transition: transform 250ms var(--timing-function) ;
+   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function) ;
 }
  
 .main-button:hover,
@@ -649,7 +654,7 @@ border-top: none;
     color: var(--text-color);
 }
 .portfolio-link {
-    transition: transform 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-link:hover,
@@ -747,7 +752,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 
-transition: transform 250ms var(--timing-function) ;
+transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function) ;
 }
 .join-soc-icon {
 fill: var(--original-white-color)
@@ -778,7 +783,7 @@ fill: var(--original-white-color)
     border-radius: 4px;
     background-color: var(--original-white-color);
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 350ms var(--timing-function);
+    transition: color 350ms var(--timing-function);
 
 }
 .backdrop.is-hidden .modal {
